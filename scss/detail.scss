@@ -1,0 +1,58 @@
+@import "main.scss";
+
+.detailHeader{
+    width:100%;
+    height:100%;
+    @include flexBox;
+   
+   
+    .back{
+        @include flex-center;
+        width:50px;
+        height:100%; 
+              
+    }
+    .title{
+        @include flex(1);
+        @include flex-center;
+        font:16px "微软雅黑";
+        height:100%;
+    }
+    .detailHome{
+        @include flex-center;
+       margin-left:20px;
+        width:50px;
+        height:100%;
+    }
+}
+
+.detailContent{
+    width:100%;
+    height:100%;
+    background:#F4F4F4; 
+    position:relative;  
+     
+    .noShop{
+        width:100%;
+        height:80px;
+        padding-top:20%;
+        text-align:center;
+        line-height:30px;
+        
+        .detailBtn{
+            position:absolute;left:0;right:0;margin:auto;
+           display:block;
+           border:none;
+            width:100px;
+            height:40px;
+            background:#FF6666;
+            color:#fff;
+            font:14px "微软雅黑";
+            border-radius:10px;
+            margin-top:20px;
+            
+            
+        }
+    }
+ 
+}

@@ -1,0 +1,449 @@
+@import "main.scss";
+   
+ .homeContent{
+     width:100%;
+     height:100%;
+   #homeBanner{
+       width:100%;
+       height:215px;
+      #homeWapper{
+           width:100%;
+            height:215px;
+            img{
+              height:100%;
+              width:100%;              
+       }
+      }      
+   };
+   
+   .box-wrap{
+       width:100%;
+       height:130px;
+       box-sizing:border-box;
+       padding:5px;
+       overflow-x: auto;
+       overflow-y: hidden;
+       white-space: nowrap;
+       &::-webkit-scrollbar {display:none};
+                    
+       .box{
+           width:125%;
+           height:100%;         
+                  
+          dl{
+              width:20%;
+              height:100%;
+              margin-top:5px;
+              float:left; 
+           
+              dd{
+                  @include flex-center;
+                  width:100%;
+                  height:80px;
+                  img{
+                      height:100%;
+                     }
+                  }
+              dt{
+                 @include flex-center;
+                 padding-top:10px;
+                 font:14px "微软雅黑";
+                 color:#666; 
+              }
+              
+          }
+       }
+   }
+   .boxKong{
+       width:100%;
+       height:10px;
+       background:#eee;
+   };
+   
+   .mian1{
+      width:100%;
+        .mainTit{
+           width:100%;
+           height:36px;
+           line-height:36px;
+           font-size:15px;
+           span:nth-of-type(1){
+               float:left;
+               padding-left:15px;
+           }
+           span:nth-of-type(2){
+               float:right;
+               padding-right:10px;
+               color:#666;
+           }
+           
+       }
+      .mainVal{
+          width:100%;
+          .shopValue{
+           width:100%;
+           height:140px;
+           box-sizing:border-box;
+           padding:8px;
+           @include flexBox;
+           border-bottom:2px solid #eee;
+           img{
+               width:30%;           
+              }
+       .shopDet{
+           width:70%;
+           height:100%;
+           margin-left:3%;
+           position:relative;
+           h3{
+               font:17px "宋体"; 
+               padding-top:5px;
+           }
+           p:nth-of-type(1){
+               font-size:18px;
+               color:#FF6699;
+               padding-top:12px;
+               span{
+                    font-size:13px;
+                    color:#666;
+                    padding-left:15px;
+                    text-decoration:line-through;
+               }
+           }
+           p:nth-of-type(2){
+               padding-top:5%;
+               font-size:14px;
+               color:#666;
+               
+           }
+           .valueBtn{
+               width:80px;
+               height:32px;
+               background:#FF6699;
+               border-radius: 20px;
+               position: absolute;
+               text-align:center;
+               line-height:32px;
+               color:#fff;
+               font-size:16px;
+               right:6%;
+               bottom:6%;               
+           }
+        }
+      }  
+          
+    }
+      .mainBtm{
+        width:100%;
+        height:50px;
+        margin-top:10px;
+        @include flexBox;
+        @include flex-center;
+        
+        span{
+             margin-top:10px;
+             width:70%;
+             height:35x;
+             background:#FF6699;
+             border-radius:15px;
+            font-size:16px;
+            color:#fff;
+            text-align:center;
+            line-height:35px;
+        }
+    
+      } 
+   }
+   
+   .boxKong2{
+       width:100%;
+       height:10px;
+       background:#eee;
+       margin:10px auto;
+   }
+   .limitTime{
+       width:100%;       
+      .limitHeader{
+           width:100%;
+           @include flexBox;
+           @include flex-center; 
+           
+             fieldset{
+               width:60%;
+               height:40px;
+               border-top:1px solid #666;
+              legend{
+                 width:80%;
+                 text-align:center;
+               }
+           } 
+      }
+      
+      .limitContent{
+          width:100%;
+          height:250px;          
+          margin-top:10px;
+          box-sizing:border-box;
+          padding:8px;
+          overflow-x: auto;
+          overflow-y: hidden;
+          white-space: nowrap;
+          &::-webkit-scrollbar {display:none};
+                    
+          .limitWrap{
+              width:350%;
+              height:100%;
+              @include flexBox;
+               .singleShop{
+                  margin-right:8px;
+                  width:30%;
+                  height:100%;
+                                                                                                  
+                      img{
+                         //margin:5%;
+                         width:100%;
+                         height:165px;
+                         text-align:center;                        
+                      }  
+                
+                  
+                  .singleVal{
+                      height:30px;
+                      width:100%;
+                      margin-top:8px;
+                      span:nth-of-type(1){
+                          float:left;
+                          padding-left:5px;
+                          font-size:15px;
+                          color:red;
+                      }
+                       span:nth-of-type(2){
+                           float:right;
+                           padding-right:5px;
+                           font-size:13px;
+                           color:#666;
+                           text-decoration: line-through;
+                      }
+                  }
+                  .rushShop{
+                      width:100%;
+                      //height:35px;
+                      @include flexBox;
+                      @include flex-center;
+                      
+                      span{
+                         width:65%;
+                         height:30px;
+                         @include flex-center;
+                         background:#D0011B;
+                         border-radius:10px;
+                         font-size:13px;
+                         color:#fff;
+                         text-align:center;
+                         line-height:35px
+                      }
+                  }
+
+              }
+              .board{
+                  width:30%;
+                  @include flexBox;
+                  
+                  span{
+                      @include flex-center;
+                      width:100%;
+                      height:165px;
+                      background:#eee;
+                      
+                  }
+                  
+              }
+        }
+          
+      }
+   }
+   
+   .boxKong3{
+       width:100%;
+       height:10px;
+       background:#eee;
+       margin:10px auto;
+   }
+   .mainShopImg{
+       width:100%;
+       height:300px;
+       background:url(./../image/pic1.jpg) no-repeat left top /cover; 
+       box-sizing:border-box;
+       padding:5px;
+       
+      
+       a{
+          float:left;
+          width:23.5%;
+          height:150px;
+          margin-left:5px;
+                   
+       }    
+   }
+   .mainTitImg{
+       width:100%;
+       height:70px;
+       img{
+           width:100%;
+       }
+   }
+   .mainContent{
+       width:100%;
+       
+       .mainBanner1{
+        width:100%;
+        
+         .bannerImg{
+            width:100%;
+                      
+             }
+              .mainList3{
+                   width:100%;
+                   height:230px;
+                   box-sizing: border-box;
+                   padding:5px;
+                   overflow-x: auto;
+                   overflow-y: hidden;
+                   white-space: nowrap;
+                   &::-webkit-scrollbar {display:none};
+               
+               .mainWrap{  
+                   height:100%;
+                   @include flexBox;
+                   
+                   .listWrap{
+                        width:110px;
+                        height:100%;
+                        background:#eee;
+                        margin-left:5px;
+                       img{
+                        width:110px;
+                        }
+                        h4{
+                           font-size:15px;
+                           overflow:hidden;
+                           white-space: nowrap;
+                           text-overflow: ellipsis;
+                           padding-top:5px;
+                           }
+                           p{
+                               font-size:14px;
+                               color:red;
+                           }
+         
+                       }
+                       
+                   }
+               }
+        }
+       
+   }
+   .updataMore{
+       width:100%;
+       height:40px;
+       text-align:center;
+       line-height:40px;
+       font-size:18px;
+       border-top:1px solid #eee;
+       color:#ff6699;
+   }
+   .boxKong4{
+       width:100%;
+       height:10px;
+       background:#eee;
+       margin:10px auto;
+   }
+   .shopLists{
+       width:100%;
+       .tabHeader{
+           width:100%;
+           .navBox{
+            width:100%;
+            height:40px;
+            @include flexBox;
+            
+            li{
+                width:33.3%;
+                text-align:center;
+                line-height:36px;               
+                font-size:16px;
+                color:#000;
+            }
+             .active{
+                 b{
+                     color:#ff6699;
+                      padding-top:5px;
+                      border-bottom:1px solid #ff6699;  
+                 }                                         
+                                   
+                }
+         
+          }
+       }
+        
+        
+        .tab-content{
+            width:100%;
+            min-height:800px;height:auto!important;height:500px;            
+            #home,#profile,#messages{
+                width:100%;                                
+                .tabLists{
+                    width:100%;  
+                    @include flexBox;
+                    flex-wrap:wrap;                 
+                    li{
+                       margin:4px;
+                       width:48%;
+                       height:340px;
+                       background:url(./../image/logo.png) no-repeat center;
+                       
+                      // height:350px;
+                     // background:#eee;
+                       @include flexBox;
+                       @include flex-center;
+                       @include flex-direction("clumn");
+               
+                       img{
+                           width:100%;
+                           height:280px;
+                                                      
+                       }
+                       h5{
+                          width:100%;
+                          display:block;
+                          line-height:36px;
+                          font-size:18px;
+                          overflow:hidden;
+                          white-space: nowrap;
+                          text-overflow: ellipsis;
+                       }
+                       p{
+                           color:#ff6699;
+                           font-size:16px;
+                           i{
+                              font-size:15px;
+                              color:#ccc;
+                              padding-left:10px
+                           }
+                           span{
+                              font-size:15px;
+                              color:#ccc;
+                              padding-left:5px; 
+                           }
+                       }
+                        
+                    }
+                }
+            }
+        }
+   }
+   
+ }
+ 
+        
+         

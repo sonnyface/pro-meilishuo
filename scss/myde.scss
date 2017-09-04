@@ -1,0 +1,186 @@
+@import "main.scss";
+
+.mydeHeader{
+    width:100%;
+    height:100%;
+    @include flexBox;
+   
+    .back{
+        @include flex-center;
+        width:50px;
+        height:100%;       
+    }
+    .title{
+        @include flex(1);
+        @include flex-center;
+        font:16px "微软雅黑";
+        height:100%;
+    }
+    .mydeHome{
+        @include flex-center;
+       margin-left:20px;
+        width:50px;
+        height:100%;
+    }
+}
+
+.mydeContent{
+    width:100%;
+    height:100%;
+    position:relative;  
+    
+    .MydeHeader{
+        width:100%;
+        height:230px;
+        background:url(./../image/01.jpg) no-repeat left top;
+        .ImgBox{
+           width:100%;
+           height:150px;
+            @include flexBox;
+            @include flex-center;
+            @include flex-direction("clumn");
+                
+            img{
+                height:80px;
+                width:80px;
+                border-radius:80px;
+                margin-bottom:5px;
+            }
+          
+        }
+       .boxList{
+           width:100%;
+           height:80px;
+           @include flexBox;
+           @include flex-center;
+           @include flex-direction("row");
+           box-sizing: border-box;
+           border-top:1px solid #fff;
+            
+            li{
+                height:100%;
+                width:25%;
+                @include flex-center;
+                color:#fff;
+                fone-size:14px;
+                span{
+                    @include flex-center;
+                    display:block;
+                    width:21px;
+                    height:30px;
+                       }      
+             }
+            li:nth-of-type(3) span{
+                 background: url(./../image/02.png) no-repeat 0 -198px;
+            }
+            li:nth-of-type(4) span{
+                 background: url(./../image/02.png) no-repeat 0 -404px;
+            }
+       }
+    
+    } 
+    .boxKong11{
+       width:100%;
+       height:10px;
+       background:#eee;
+   };   
+    .MydeConten1{
+        width:100%;
+        height:80px;
+      
+        img{
+            float:left;
+            width:50px;
+            height:50px;  
+            margin-left:10px;
+            margin-top:15px;          
+        }
+        b{
+             float:left;
+             font-size:23x;
+             line-height:80px;
+             padding-left:10px;
+             
+        }
+       p{
+             float:right;
+             font-size:14x;
+             line-height:80px;
+             padding-right:10px;
+             
+        }
+        
+    }
+    .boxKong22{
+       width:100%;
+       height:10px;
+       background:#eee;
+   };  
+   .MydeConten2{
+       width:100;
+       height:80px;
+       .boxList2{
+           width:100%;
+           height:100%;
+           @include flexBox;
+           @include flex-center;
+           @include flex-direction("row");
+           box-sizing: border-box;
+                       
+            li{
+                height:100%;
+                width:25%;
+                @include flex-center;
+                color:#666;
+                fone-size:14px;
+                
+                span{
+                    @include flex-center;
+                    display:block;
+                    width:33px;
+                    height:35px;
+                    background: url(./../image/02.png) no-repeat 0 -600px;
+                    padding-bottom:3px;
+                 }      
+             }
+            li:nth-of-type(2) span{
+                 color:#ff6699;
+            }
+            li:nth-of-type(2) span{
+                 background: url(./../image/02.png) no-repeat -83px -640px;
+            }
+             
+            li:nth-of-type(3) span{
+                 background: url(./../image/02.png) no-repeat -170px -640px;
+            }
+            li:nth-of-type(4) span{
+                 background: url(./../image/02.png) no-repeat -255px -640px;
+            }
+       }
+       
+   } 
+   .boxKong33{
+       width:100%;
+       height:10px;
+       background:#eee; 
+   }
+    .mydeContent3{
+        width:100%;
+        min-height:220px;
+        height:auto!important;
+        height:220px;
+        background:#eee;
+        @include flexBox;
+        @include flex-direction("clumn");
+        @include flex-center;
+        img{
+           width:100px;
+           height:100px;
+        }
+        p{
+            font-size:20px;
+            padding-top:10px;
+            color:#666;
+        }
+    }
+}

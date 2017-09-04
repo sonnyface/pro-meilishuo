@@ -1,0 +1,89 @@
+@import "main.scss";
+
+
+.loginHeader{
+    width:100%;
+    height:100%;
+    border-bottom:1px solid #ccc;
+    @include flexBox;
+    
+   
+    .back{
+        @include flex-center;
+        width:50px;
+        height:100%;       
+    }
+    .title{
+        @include flex(1);
+        @include flex-center;
+        font:16px "微软雅黑";
+        height:100%;
+    }
+    .loginHome{
+        @include flex-center;
+        margin-left:20px;
+        width:50px;
+        height:100%;
+    }
+}
+
+.loginContent{
+   
+    width:100%;
+    height:100%;
+    @include flexBox;
+    @include flex-direction("clumn");
+    
+    .loginImg{
+        width:116px;
+        height:116px;
+        margin:20px auto;
+        @include flex-center;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    fieldset{
+        margin:0 5%;
+         width:90%;
+         border-top:1px solid #ccc;
+         legend{
+            font-size:15px;
+            text-align:center;
+            width:33%; 
+            color:#666;
+            margin-bottom:20px;
+        }
+        input{
+            width:100%;
+            height:40px;
+            background:#eee;
+            border:none;
+            margin-bottom:10px;
+            text-indent:10px;
+            color:#666;
+            border-radius:5px;
+          
+        }
+          #loginBtn{
+                background:#FF5777;
+                color:#fff;
+            }
+            span{
+                display:block;
+                width:100%;
+                text-align:right;
+                font-size:16px;
+          }
+    }
+    
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+@import "main.scss";
+
+
+.registerHeader{
+    width:100%;
+    height:100%;
+    border-bottom:1px solid #ccc;
+    @include flexBox;
+    
+   
+    .back{
+        @include flex-center;
+        width:50px;
+        height:100%;       
+    }
+    .title{
+        @include flex(1);
+        @include flex-center;
+        font:16px "微软雅黑";
+        height:100%;
+    }
+    .registerHome{
+        @include flex-center;
+        margin-left:20px;
+        width:50px;
+        height:100%;
+    }
+}
+
+.registerContent{
+   
+     padding-top:25px;
+    input{
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: 5%;
+        height: 36px;
+        display: block;
+        margin-top: 15px;
+        border:1px solid #ddd;
+    
+    }
+     #btn{
+          background:#ff6699;
+          border:none;
+          color:#fff;
+          font-size:16px;
+      }  
+    input[type='text'],input[type='password']{
+        text-indent: 12px;
+    }
+    p{
+      width:100;
+      line-height:36px;
+      margin-left:5%;
+       
+    }
+}
+
+
+
+
+
+
+
+
